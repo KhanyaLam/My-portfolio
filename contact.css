@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: lightcoral;
+    background-size: cover;
+    height: 200px;
+}
+.main{
+    width:100%;
+}
+.main .navbar{
+    width:1200px;
+    height:75px;
+    margin:auto;
+}
+.navbar .logo{
+    float: left;
+    width:200px;
+    height:100px;
+    border-radius: 0%;
+
+}
+.navbar .logo img{
+    float:left;
+    width: 240px;
+    height:200px;
+    border-radius: 0%;
+}
+.main .navbar .menu{
+    width: 500px;
+    float: right;
+    height: 50px;
+}
+.main .navbar .menu ul{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.main .navbar .menu ul li{
+    list-style: none;
+    margin-right: 60px;
+    margin-bottom: 100px;
+    font-size: 19px;
+}
+.main .navbar .menu ul li a{
+    text-decoration: none;
+    color: blueviolet;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+.main .navbar .menu ul li a:hover{
+    color: crimson;
+}
+.contact{
+    position: relative;
+    min-height: 100px;
+    padding:50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: color-mix(in srgb, blueviolet 60%, lightcoral 40%);
+}
+.contact .content{
+    max-width: 750px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: whitesmoke;
+}
+.contact .content p{
+    font-weight: 400;
+    color: whitesmoke;
+
+}
+.container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+}
+.container .contact-info{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contact-info .box{
+    position: relative;
+    padding:20px 0;
+    display: flex;
+}
+.container .contact-info .box .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .contact-info .box .text{
+    display: flex;
+    margin-left: 19px;
+    font-size:14px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contact-info .box .text h3{
+    font-weight: 500;
+    color: crimson;
+}
+.ContactForm{
+    width:50%;
+    padding:40px;
+    background: blueviolet;
+}
+.ContactForm h2{
+    font-size: 30px;
+    color:magenta;
+    font-weight: 400;
+}
+.ContactForm .InputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.ContactForm .InputBox input,
+.ContactForm .InputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid magenta ;
+    outline: none;
+    resize: none;
+}
+.ContactForm .InputBox span{
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+    font-size: 15px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.4s;
+    color: #666;
+
+}
+.ContactForm .InputBox input:focus ~ span,
+.ContactForm .InputBox input:valid ~ span,
+.ContactForm .InputBox textarea:focus ~ span,
+.ContactForm .InputBox textarea:valid ~ span{
+    color: #e6e6e6;
+    font-size: 10px;
+    transform: translateY(-20px);
+
+}
+.ContactForm .InputBox input[type="submit"]{
+    width: 100px;
+    background:crimson ;
+    color: whitesmoke ;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 15px;
+}
+footer{
+    background-color:lightcoral ;
+    padding-top: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+
+}
+.container .Address{
+    padding-right: 30%;
+}
+.container .icons{
+    text-align: center;
+    padding:3px;
+    
+}
+.container .Address .icons li{
+    display: inline-flex;
+    float: left;
+    text-align: center;
+    padding-left: 1000px;
+    padding: 5px;
+    font-size: xx-large; 
+}
+.container .links{
+    justify-items: center;
+    padding-right: 20%;
+}
+.container .links  h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+ .container .links ul{
+    float: left;
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-start;
+    list-style-type: none;
+    
+}
+.container .links ul li{
+    width:auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 5px;
+    position: relative;
+
+}
